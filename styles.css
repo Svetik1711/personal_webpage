@@ -1450,24 +1450,18 @@ section {
     }
 
     /* Contact */
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-lg);
+    .contact-simple {
+        flex-wrap: wrap;
+        gap: var(--space-md);
     }
 
-    .contact-lead {
-        font-size: 1.125rem;
-        margin-bottom: var(--space-lg);
+    .contact-svg {
+        width: 32px;
+        height: 32px;
     }
 
-    .contact-email {
-        font-size: clamp(1.25rem, 3vw, 1.75rem);
-        margin-bottom: var(--space-lg);
-    }
-
-    .contact-details {
-        border-top: 1px solid var(--border);
-        padding-top: var(--space-lg);
+    .contact-label {
+        font-size: 0.625rem;
     }
 
     .footer-content {
