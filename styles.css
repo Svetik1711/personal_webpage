@@ -1198,7 +1198,7 @@ section {
         backdrop-filter: blur(10px);
         flex-direction: column;
         gap: 0;
-        padding: var(--space-md);
+        padding: var(--space-md) calc(var(--space-md) + 1rem);
         max-height: calc(100vh - 60px);
         overflow-y: auto;
         border-bottom: 1px solid var(--border);
@@ -1261,15 +1261,7 @@ section {
     }
 
     .hero-bg-photo {
-        position: relative;
-        top: auto;
-        right: auto;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        opacity: 0.3;
-        margin-top: var(--space-md);
-        margin-bottom: var(--space-md);
+        display: none;
     }
 
     .photo-frame-corner {
