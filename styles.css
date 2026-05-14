@@ -168,7 +168,7 @@ section {
 .header-top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: var(--space-sm) var(--space-lg);
     max-width: 1400px;
     margin: 0 auto;
@@ -1172,21 +1172,6 @@ section {
 
     .header-top {
         padding: var(--space-sm) var(--space-md);
-        gap: var(--space-md);
-    }
-
-    .header-brand {
-        flex: 1;
-        gap: 0.5rem;
-    }
-
-    .logo {
-        font-size: 0.75rem;
-    }
-
-    .header-meta {
-        font-size: 0.625rem;
-        padding-left: 0.5rem;
     }
 
     .nav {
