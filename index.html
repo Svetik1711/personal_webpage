@@ -14,6 +14,9 @@
 
     <header class="header">
         <div class="header-top">
+            <a href="#" class="profile-photo">
+                <img src="Objekt.png" alt="Svetlana Zubareva" />
+            </a>
             <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
@@ -34,17 +37,6 @@
             <div class="hero-bg-photo">
                 <img src="Objekt.png" alt="Svetlana Zubareva" />
             </div>
-            <div class="hero-icons">
-                <svg class="hero-icon icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                </svg>
-                <svg class="hero-icon icon-path" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>
-                </svg>
-                <svg class="hero-icon icon-bike" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V12l-3-3 4-3 2 3h2"/>
-                </svg>
-            </div>
             <div class="photo-frame-corner"></div>
             <div class="hero-content">
                 <div class="hero-text">
@@ -54,7 +46,7 @@
                         <span class="line">Zubareva</span>
                     </h1>
                     <p class="hero-desc">
-                        Mobility data scientist at the Chair of Automotive Technology, TUM.
+                        Mobility data scientist at the Chair of Automotive Technology, Technical University of Munich.
                         Developing methodological frameworks for analyzing human mobility
                         through high-resolution GPS data and geospatial analysis.
                     </p>
@@ -74,44 +66,78 @@
 
             <div class="interests-grid">
                 <article class="interest-card">
-                    <div class="interest-icon">🚗</div>
-                    <h3 class="interest-title">Shared Mobility Systems</h3>
+                    <div class="interest-header">
+                        <svg class="interest-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V12l-3-3 4-3 2 3h2"/>
+                        </svg>
+                        <h3 class="interest-title">Shared Mobility Systems</h3>
+                    </div>
                     <p class="interest-desc">
                         Analyzing car-sharing, bike-sharing, and e-scooter systems through high-resolution
-                        vehicle-level data. Understanding usage patterns, spatial distribution, and
-                        integration with public transport.
+                        vehicle-level data.
                     </p>
+                    <div class="interest-tags">
+                        <span class="tag">Usage Patterns</span>
+                        <span class="tag">Spatial Analysis</span>
+                    </div>
                 </article>
 
                 <article class="interest-card">
-                    <div class="interest-icon">🗺️</div>
-                    <h3 class="interest-title">Geospatial Methods</h3>
+                    <div class="interest-header">
+                        <svg class="interest-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <h3 class="interest-title">Geospatial Methods</h3>
+                    </div>
                     <p class="interest-desc">
-                        Developing feature-based approaches for spatial analysis using GPS trajectories.
-                        Monte Carlo feature selection, clustering algorithms, and visualization techniques
-                        for mobility pattern recognition.
+                        Developing feature-based approaches for spatial analysis using GPS trajectories
+                        and Monte Carlo methods.
                     </p>
+                    <div class="interest-tags">
+                        <span class="tag">GPS Trajectories</span>
+                        <span class="tag">Feature Selection</span>
+                    </div>
                 </article>
 
                 <article class="interest-card">
-                    <div class="interest-icon">📊</div>
-                    <h3 class="interest-title">Urban Analytics</h3>
+                    <div class="interest-header">
+                        <svg class="interest-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 3v18h18"/><path d="M7 17l4-4 4 4 5-5"/><path d="M7 13l4-4 4 4 5-5"/><path d="M7 9l4-4 4 4 5-5"/>
+                        </svg>
+                        <h3 class="interest-title">Urban Analytics</h3>
+                    </div>
                     <p class="interest-desc">
-                        Processing large-scale mobility datasets to understand travel behavior,
-                        trip derivation, and utilization patterns in urban environments.
-                        Data-driven insights for sustainable transportation planning.
+                        Processing large-scale mobility datasets to understand travel behavior
+                        and support sustainable planning.
                     </p>
+                    <div class="interest-tags">
+                        <span class="tag">Travel Behavior</span>
+                        <span class="tag">Urban Planning</span>
+                    </div>
                 </article>
             </div>
 
-            <div class="research-box">
-                <h3>Current Project: ReFuMoLab Garching</h3>
-                <p>
-                    Real-world laboratory under the <strong>MCube cluster</strong> establishing a testbed for
-                    innovative mobility solutions on the TUM Garching campus. Analyzing mobility patterns from
-                    shared vehicles and contributing to sustainable campus mobility strategies.
-                </p>
-            </div>
+            <a href="https://mcube-cluster.de/en/projekt/refumolab_garching/" target="_blank" class="project-link">
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-label">Current Project</span>
+                        <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">ReFuMoLab Garching</h3>
+                    <p class="project-desc">
+                        Future Mobility Campus developing sustainable, multimodal transport solutions
+                        through digital services and infrastructure changes. Testing innovative mobility
+                        services including automated shuttles on the TUM Garching campus.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Sustainable Mobility</span>
+                        <span class="tag">Living Lab</span>
+                        <span class="tag">MCube Cluster</span>
+                    </div>
+                </div>
+            </a>
         </section>
 
         <section id="publications" class="section section-alt">
@@ -272,47 +298,36 @@
         </section>
 
         <section id="contact" class="section section-alt">
-            <div class="section-header">
-                <span class="section-id">§ 05</span>
-                <h2 class="section-title">Contact</h2>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-main">
-                    <p class="contact-lead">
-                        Open to collaborations, student supervision, and research inquiries
-                        in mobility data analysis and shared transportation systems.
-                    </p>
-
-                    <a href="mailto:s.zubareva@tum.de" class="contact-email">
-                        s.zubareva@tum.de
+            <div class="contact-wrapper">
+                <h2 class="contact-title">Get in touch</h2>
+                <p class="contact-subtitle">
+                    Open to collaborations, student supervision, and research inquiries
+                </p>
+                <div class="contact-simple">
+                    <a href="mailto:s.zubareva@tum.de" class="contact-icon-link" aria-label="Email">
+                        <svg class="contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span class="contact-label">Email</span>
                     </a>
-
-                    <div class="contact-links">
-                        <a href="https://linkedin.com/in/svetlana-zubareva-4403a8258" target="_blank" class="contact-link">
-                            <span>LinkedIn</span>
-                            <span>→</span>
-                        </a>
-                        <a href="https://www.mos.ed.tum.de/en/ftm/members/teams/svetlana-zubareva-msc/" target="_blank" class="contact-link">
-                            <span>TUM Profile</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-details">
-                    <div class="detail">
-                        <span class="detail-label">Office</span>
-                        <span class="detail-value">
-                            Room MW 3509<br>
-                            Boltzmannstraße 15<br>
-                            85748 Garching, Germany
-                        </span>
-                    </div>
-                    <div class="detail">
-                        <span class="detail-label">Phone</span>
-                        <span class="detail-value">+49 89 289 15363</span>
-                    </div>
+                    <a href="tel:+498928915363" class="contact-icon-link" aria-label="Phone">
+                        <svg class="contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span class="contact-label">Phone</span>
+                    </a>
+                    <a href="https://linkedin.com/in/svetlana-zubareva-4403a8258" target="_blank" class="contact-icon-link" aria-label="LinkedIn">
+                        <svg class="contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <span class="contact-label">LinkedIn</span>
+                    </a>
+                    <a href="https://www.mos.ed.tum.de/en/ftm/members/teams/svetlana-zubareva-msc/" target="_blank" class="contact-icon-link" aria-label="TUM Profile">
+                        <svg class="contact-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        <span class="contact-label">TUM</span>
+                    </a>
                 </div>
             </div>
         </section>
