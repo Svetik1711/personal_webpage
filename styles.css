@@ -437,7 +437,7 @@ section {
 /* Section Headers - Document Style */
 .section-header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: var(--space-md);
     margin-bottom: calc(var(--space-xl) + 1rem);
     padding-bottom: var(--space-md);
@@ -456,6 +456,32 @@ section {
     color: var(--text-primary);
     font-weight: 500;
     letter-spacing: -0.01em;
+    flex: 1;
+}
+
+.cv-download {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    transition: all 0.2s ease;
+}
+
+.cv-download:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+}
+
+.cv-download svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* Research Interests */
