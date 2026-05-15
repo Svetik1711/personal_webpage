@@ -88,7 +88,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Apply reveal animation to cards
-document.querySelectorAll('.research-item, .pub-item, .cv-entry, .interest-card, .planned-card').forEach(el => {
+document.querySelectorAll('.research-item, .pub-entry, .cv-entry, .interest-card, .planned-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
