@@ -765,18 +765,20 @@ section {
 }
 
 .pub-title {
-    font-family: var(--font-sans);
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-weight: 500;
     line-height: 1.5;
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-sm);
     color: var(--text-primary);
 }
 
 .pub-authors {
-    font-size: 0.72rem;
+    font-family: var(--font-serif);
+    font-size: 0.9375rem;
     color: var(--text-secondary);
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-sm);
+    font-style: italic;
 }
 
 .pub-authors strong {
@@ -786,22 +788,23 @@ section {
 
 .pub-venue {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
     margin-bottom: var(--space-xs);
 }
 
 .pub-venue-detail {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.6875rem;
     color: var(--text-muted);
     margin-bottom: var(--space-xs);
 }
 
 .pub-abstract {
-    font-size: 0.7rem;
+    font-family: var(--font-serif);
+    font-size: 0.9375rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: var(--space-sm);
     font-style: italic;
 }
@@ -814,7 +817,7 @@ section {
 
 .pub-link {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     color: var(--accent);
     text-decoration: none;
     border-bottom: 1px solid rgba(255, 107, 53, 0.25);
@@ -828,7 +831,7 @@ section {
 
 .pub-badge {
     font-family: var(--font-mono);
-    font-size: 0.55rem;
+    font-size: 0.625rem;
     color: var(--accent);
     border: 1px solid rgba(255, 107, 53, 0.25);
     padding: 0.15rem 0.5rem;
@@ -1411,7 +1414,7 @@ section {
     }
 
     .pub-title {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* CV */
